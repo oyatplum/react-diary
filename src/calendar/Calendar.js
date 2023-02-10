@@ -10,7 +10,7 @@ export default function Calendar ({currentMonth, preMonth, nextMonth}) {
             preMonth={preMonth}
             nextMonth={nextMonth}
         />
-        
+        <Days />
     </div>
   )
 }
