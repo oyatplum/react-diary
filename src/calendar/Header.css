@@ -1,1 +1,23 @@
-
+.header {
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.current_month {
+    font-size: 90px;
+}
+.month_button {
+    color: rgb(223, 197, 138);
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.month_button:hover {
+    color: black;
+}
