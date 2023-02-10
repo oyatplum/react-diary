@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {addMonths, subMonths, format} from 'date-fns'
+import './Header.css'
 
 export default function Header() {
     const [currentMonth, setCurrentMonth] = useState(new Date())
