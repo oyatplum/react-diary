@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import {addMonths, subMonths, format} from 'date-fns'
 import './Header.css'
+import Days from './Days'
+import Weeks from './Weeks'
 
 export default function Header() {
     const [currentMonth, setCurrentMonth] = useState(new Date())
@@ -15,6 +17,7 @@ export default function Header() {
 
 
   return (
+    <div>
     <div className='header'>
         <span
             className='month_button'
@@ -33,5 +36,11 @@ export default function Header() {
         >{">"}
         </span>
     </div>
+    
+    <Days />
+    <Weeks currentMonth={currentMonth}/>
+    
+    </div>
+    
   )
 }

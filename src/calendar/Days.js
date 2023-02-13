@@ -7,7 +7,7 @@ export default function Days() {
 
     for(let i=0; i<7; i++) {
       days_s.push(
-      <div className='each_days'>
+      <div className='each_days' key={i}>
         {days[i]}
       </div>)
     }

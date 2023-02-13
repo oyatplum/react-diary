@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Days from './Days'
+import Weeks from './Weeks'
 
 export default function Calendar ({currentMonth, preMonth, nextMonth}) {
   return (
@@ -10,7 +11,8 @@ export default function Calendar ({currentMonth, preMonth, nextMonth}) {
             preMonth={preMonth}
             nextMonth={nextMonth}
         />
-        <Days />
+        
+        <Weeks currentMonth={currentMonth} />
     </div>
   )
 }
