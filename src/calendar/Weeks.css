@@ -12,11 +12,17 @@
     width: 40px;
     text-align: center;
 }
+.one_weeksame_month:hover{
+    color:rgb(255, 222, 121);
+}
 .one_weeksame_day{
     width: 40px;
     text-align: center;
     color: rgb(193, 141, 18);
     font-weight: bold;
+}
+.one_weeksame_day:hover{
+    color:rgb(255, 222, 121);
 }
 .one_weeknot_same_month{
     color: gray;
