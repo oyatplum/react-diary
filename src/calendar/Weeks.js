@@ -1,9 +1,9 @@
 import React from 'react'
 import {startOfMonth, endOfMonth, startOfWeek, endOfWeek, format} from 'date-fns'
-import { addDays, isSameMonth } from 'date-fns'
+import { addDays, isSameMonth, isSameDay } from 'date-fns'
 import './Weeks.css'
 
-export default function Weeks({currentMonth}) {
+export default function Weeks({currentMonth, currentDate}) {
     const StartMonth = startOfMonth(currentMonth)
     const EndMonth = endOfMonth(StartMonth)
     const StartDate = startOfWeek(StartMonth)
@@ -19,7 +19,7 @@ export default function Weeks({currentMonth}) {
             formattedDate = format(day, 'd')
             one_week.push(
                 <div className={`one_week${
-                    !isSameMonth(day, StartMonth) ? 'not_same_month' : 'same_month'
+                    !isSameMonth(day, StartMonth) ? 'not_same_month' : !isSameDay(day, currentDate) ? 'same_month' : 'same_day'
                 }`}
                  key={day}>
                     {formattedDate}

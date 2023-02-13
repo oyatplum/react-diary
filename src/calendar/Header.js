@@ -6,6 +6,7 @@ import Weeks from './Weeks'
 
 export default function Header() {
     const [currentMonth, setCurrentMonth] = useState(new Date())
+    const [currentDate, setCurrentDate] = useState(new Date())
 
     const preMonth = () => {
         setCurrentMonth(subMonths(currentMonth, 1))
@@ -38,7 +39,7 @@ export default function Header() {
     </div>
     
     <Days />
-    <Weeks currentMonth={currentMonth}/>
+    <Weeks currentMonth={currentMonth} currentDate={currentDate}/>
     
     </div>
     
