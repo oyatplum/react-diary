@@ -1,9 +1,15 @@
 .days {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: 15px;
+}
+.each_days {
+    width: 40px;
+    text-align: center;
 }
 @media screen and (min-width: 1200px) {
     .days{
-        padding: 0 20px;
+        font-size: 20px;
+        padding: 10px 20px;
     }
 }

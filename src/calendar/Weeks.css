@@ -1,1 +1,26 @@
+.month{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+.one_month{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.one_weeksame_month{
+    width: 40px;
+    text-align: center;
+}
+.one_weeknot_same_month{
+    color: gray;
+    width: 40px;
+    text-align: center;
+}
 
+@media screen and (min-width: 1200px) {
+    .month{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+}
