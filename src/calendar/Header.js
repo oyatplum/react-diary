@@ -28,8 +28,8 @@ export default function Header() {
 
         <div className='current_month'>
             {format(currentMonth, "M")}
+            <span className='current_year'>{format(currentMonth, 'yyyy')}</span>
         </div>
-
 
         <span
             className='month_button'
