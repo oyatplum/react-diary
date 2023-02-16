@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import { Outlet, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
-import Calendar from '../src/calendar/Calendar'
+import Calendar from './calendar/Calendar';
 
 function App() {
   return (
     <div className="container">
       <div className='block'>
-        <Calendar />
+          <Routes>
+            <Route path='/' element={<Calendar />}/>
+          </Routes>
       </div>
     </div>
   );

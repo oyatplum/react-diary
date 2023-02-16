@@ -16,7 +16,6 @@ export default function Header() {
         setCurrentMonth(addMonths(currentMonth, 1))
     }
 
-
   return (
     <div>
     <div className='header'>
@@ -40,8 +39,6 @@ export default function Header() {
     
     <Days />
     <Weeks currentMonth={currentMonth} currentDate={currentDate}/>
-    
-    </div>
-    
+    </div>  
   )
 }
