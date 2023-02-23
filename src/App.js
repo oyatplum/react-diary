@@ -7,7 +7,7 @@ function App() {
     <div className="container">
       <div className='block'>
           <Routes>
-            <Route path='/' element={<Calendar />}/>
+            <Route path='/*' element={<Calendar />}/>
           </Routes>
       </div>
     </div>

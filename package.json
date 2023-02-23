@@ -1,6 +1,5 @@
 {
-  "homepage": "https://oyatplum.github.io/react-calendar/",
-  "name": "react-calendar",
+  "homepage": "https://oyatplum.github.io/react-calendar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
